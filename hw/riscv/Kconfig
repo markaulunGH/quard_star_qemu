@@ -66,6 +66,27 @@ config SHAKTI_C
     select SIFIVE_PLIC
     select UNIMP
 
+config QUARD_STAR
+    bool
+    default y
+    select PFLASH_CFI01
+    select SERIAL
+    select RISCV_ACLINT
+    select RISCV_APLIC
+    select RISCV_IMSIC
+    select SIFIVE_PLIC
+    select SIFIVE_GPIO
+#    select VIRTIO_MMIO
+    select I2C
+    select IMX_I2C
+    select AT24C
+    select SSI
+    select SIFIVE_SPI
+    select SIFIVE_PWM
+    select MARVELL_88W8618
+    select WM8750
+
+
 config SIFIVE_E
     bool
     default y
